@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nastya — paintings</title>
+<meta name="description" content="Nastya paints, visits museums and is in love with art. Three paintings, read up close.">
+<meta property="og:title" content="Nastya — paintings">
+<meta property="og:description" content="I'm in love!!! — with art in general, honestly.">
+<meta property="og:image" content="img/clown-cat.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23002fa7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Unbounded:wght@300;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="bar">
+  <a class="wordmark" href="#top">Nastya</a>
+  <div class="bar-links">
+    <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
+    <a href="#words" data-i18n="nav.words">Words</a>
+    <a href="#lineage" data-i18n="nav.lineage">Lineage</a>
+    <a href="#walk" data-i18n="nav.walk">Say hello</a>
+  </div>
+  <div class="lang" role="group" aria-label="Language">
+    <button data-lang="en" aria-pressed="true">EN</button>
+    <button data-lang="ru" aria-pressed="false">RU</button>
+    <button data-lang="fr" aria-pressed="false">FR</button>
+  </div>
+</nav>
+
+<!-- ───────── HERO: a Klein-blue field you can paint on ───────── -->
+<header class="hero" id="top">
+  <canvas class="brush" aria-hidden="true"></canvas>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="mono kicker" data-i18n="hero.kicker">Nastya — paints, looks, falls in love</p>
+      <h1><span>I’m in</span><span>love!!!</span></h1>
+      <p class="hero-sub" data-i18n="hero.sub">— with art in general, honestly.</p>
+      <p class="hint hand" data-i18n="hero.hint">↙ move your cursor — the brush is loaded with her colours</p>
+    </div>
+
+    <figure class="exhibit">
+      <div class="exhibit-frame"><img src="img/nastya.jpg" alt="Nastya standing in a museum hall, in a floral dress" data-i18n-alt="hero.photoAlt" width="1043" height="1280"></div>
+      <figcaption class="wall-label">
+        <b data-i18n="hero.label.name">Nastya</b>
+        <i data-i18n="hero.label.title">Portrait of the Artist as a Museum‑goer</i>
+        <span data-i18n="hero.label.medium">Floral silk, long hair, a question in mind</span>
+        <span class="mono" data-i18n="hero.label.loan">On permanent loan from herself</span>
+      </figcaption>
+    </figure>
+  </div>
+  <a class="scroll-cue mono" href="#rooms" data-i18n="hero.cue">Rooms I–III ↓</a>
+</header>
+
+<!-- ───────── ROOMS ───────── -->
+<main id="rooms">
+
+  <div class="rooms-intro">
+    <p class="mono" data-i18n="rooms.kicker">The collection · 3 works</p>
+    <h2 class="display" data-i18n="rooms.title">Read up close</h2>
+    <p class="lede" data-i18n="rooms.how">Every painting has numbered points. Tap one and the canvas leans in to show you what is happening there. “Show structure” draws the bones of the composition; the pigment samples are taken from the paint itself.</p>
+  </div>
+
+  <!-- Room I -->
+  <section class="room" id="room-1" style="--bg:#151c29;--f1:#af91a2;--f2:#84a0ce;--f3:#2b3446;--accent:#84a0ce">
+    <div class="fields" aria-hidden="true"><i></i><i></i><i></i></div>
+    <header class="room-head">
+      <span class="room-no" aria-hidden="true">I</span>
+      <div>
+        <p class="mono" data-i18n="r1.kicker">Room I · Winter landscape</p>
+        <h2 data-i18n="r1.title">The Path Home</h2>
+      </div>
+    </header>
+    <div class="room-body">
+      <figure class="canvas" style="--ar:792/1030">
+        <div class="zoomer">
+          <img src="img/winter-path.jpg" alt="A snowy path at dusk winding between snow-laden spruces toward a small log cabin" data-i18n-alt="r1.alt" width="792" height="1030" loading="lazy">
+          <svg class="structure" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M33 33.3H100M0 66.6H100M33.3 0V100M66.6 0V100" class="grid"/>
+            <path d="M40 100 C 50 84, 64 68, 58 60 S 44 52, 36 50"/>
+            <path d="M79 0 V 68"/>
+            <path d="M0 48 L 100 47"/>
+          </svg>
+          <span class="probe" aria-hidden="true"></span>
+          <button class="spot" style="--x:50;--y:76" data-n="1">1</button>
+          <button class="spot" style="--x:46;--y:50" data-n="2">2</button>
+          <button class="spot" style="--x:79;--y:38" data-n="3">3</button>
+          <button class="spot" style="--x:52;--y:30" data-n="4">4</button>
+          <button class="spot" style="--x:60;--y:17" data-n="5">5</button>
+          <button class="spot" style="--x:77;--y:79" data-n="6">6</button>
+        </div>
+      </figure>
+      <aside class="label">
+        <p class="mono caption" data-i18n="r1.caption">Oil on canvas · 2026</p>
+        <p class="lede" data-i18n="r1.lede">A winter road at the hour when snow stops being white. The whole picture runs on two temperatures — the rose of a low sun and the blue of everything it can’t reach — plus one small warm thing: a house.</p>
+        <div class="tools">
+          <button data-act="structure" aria-pressed="false" data-i18n="ui.structure">Show structure</button>
+          <button data-act="reset" data-i18n="ui.reset">Step back</button>
+        </div>
+        <p class="structure-key hand" data-i18n="r1.structure">S-curve of the path · the trunk’s vertical · the line of the snowfield · thirds</p>
+        <ol class="notes">
+          <li data-n="1"><button><span>01</span><b data-i18n="r1.n1.t">The path</b></button><p data-i18n="r1.n1.b">The road isn’t white — it’s lilac, rose and pale blue. Snow is a mirror for the sky, so painting it “white” would be a lie. The S-curve starts at the bottom edge, right where you stand, and pulls you in toward the house.</p></li>
+          <li data-n="2"><button><span>02</span><b data-i18n="r1.n2.t">The house</b></button><p data-i18n="r1.n2.b">The smallest object and the warmest dark on the canvas, sitting low on the left third line, half-buried. Its tiny size is exactly what makes the spruces feel enormous.</p></li>
+          <li data-n="3"><button><span>03</span><b data-i18n="r1.n3.t">The trunk</b></button><p data-i18n="r1.n3.b">One hard vertical cutting the picture top to bottom, right in front of us. Painters call this a repoussoir: a near object that pushes everything else back and opens up the depth.</p></li>
+          <li data-n="4"><button><span>04</span><b data-i18n="r1.n4.t">The sky</b></button><p data-i18n="r1.n4.b">Rose melting into grey, blended wet-into-wet with no visible strokes — the calmest surface in the painting. The sun is low and hidden behind the trees: late dusk, or very early morning.</p></li>
+          <li data-n="5"><button><span>05</span><b data-i18n="r1.n5.t">Snow on the branches</b></button><p data-i18n="r1.n5.b">Light paint dragged over dark with an almost dry brush. The bristles break the stroke apart, and that broken edge reads as snow caught on needles. Light lands only on the tops.</p></li>
+          <li data-n="6"><button><span>06</span><b data-i18n="r1.n6.t">Dry grass</b></button><p data-i18n="r1.n6.b">Quick upward flicks in ochre and grey — the only warm texture in the foreground. Their rhythm repeats the tall trunks, just smaller.</p></li>
+        </ol>
+        <div class="pigments">
+          <p class="mono" data-i18n="ui.pigments">Pigment samples — hover to see where</p>
+          <ul>
+            <li style="--c:#af91a2" data-x="62" data-y="93"><i></i><b data-i18n="r1.p1">Rose snow</b><code>#AF91A2</code></li>
+            <li style="--c:#84a0ce" data-x="25" data-y="57"><i></i><b data-i18n="r1.p2">Blue shadow</b><code>#84A0CE</code></li>
+            <li style="--c:#cec7cb" data-x="42" data-y="78"><i></i><b data-i18n="r1.p3">The path</b><code>#CEC7CB</code></li>
+            <li style="--c:#76889b" data-x="30" data-y="30"><i></i><b data-i18n="r1.p4">Frosted spruce</b><code>#76889B</code></li>
+            <li style="--c:#0b1220" data-x="95" data-y="52"><i></i><b data-i18n="r1.p5">Night needles</b><code>#0B1220</code></li>
+            <li style="--c:#201d17" data-x="24" data-y="51"><i></i><b data-i18n="r1.p6">Log wall</b><code>#201D17</code></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <p class="field-note mono" data-i18n="ui.fieldnote">The background of this room is a colour field after Rothko, mixed from the painting’s own pigments.</p>
+  </section>
+
+  <!-- Room II -->
+  <section class="room" id="room-2" style="--bg:#2c4f8f;--f1:#ddb561;--f2:#272958;--f3:#ddb9af;--accent:#ddb561">
+    <div class="fields" aria-hidden="true"><i></i><i></i><i></i></div>
+    <header class="room-head">
+      <span class="room-no" aria-hidden="true">II</span>
+      <div>
+        <p class="mono" data-i18n="r2.kicker">Room II · Seascape</p>
+        <h2 data-i18n="r2.title">The Rock Holds</h2>
+      </div>
+    </header>
+    <div class="room-body">
+      <figure class="canvas" style="--ar:742/1028">
+        <div class="zoomer">
+          <img src="img/rock-and-sea.jpg" alt="A golden rock rising out of a broken-blue sea under a pink sky, a small tree leaning from its side" data-i18n-alt="r2.alt" width="742" height="1028" loading="lazy">
+          <svg class="structure" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M45 16 L 86 58 L 20 63 Z"/>
+            <path d="M0 22 L 100 21"/>
+            <path d="M3 96 L 32 64"/>
+            <path d="M24 12 L 28 30" class="grid"/>
+          </svg>
+          <span class="probe" aria-hidden="true"></span>
+          <button class="spot" style="--x:50;--y:30" data-n="1">1</button>
+          <button class="spot" style="--x:12;--y:48" data-n="2">2</button>
+          <button class="spot" style="--x:21;--y:14" data-n="3">3</button>
+          <button class="spot" style="--x:87;--y:53" data-n="4">4</button>
+          <button class="spot" style="--x:74;--y:40" data-n="5">5</button>
+          <button class="spot" style="--x:68;--y:7" data-n="6">6</button>
+          <button class="spot" style="--x:20;--y:87" data-n="7">7</button>
+        </div>
+      </figure>
+      <aside class="label">
+        <p class="mono caption" data-i18n="r2.caption">Oil on canvas · 2026</p>
+        <p class="lede" data-i18n="r2.lede">A rock lit from the side, standing in a sea that refuses to be one colour. The painting is an argument between yellow and violet, and the surf is where the argument gets loudest.</p>
+        <div class="tools">
+          <button data-act="structure" aria-pressed="false" data-i18n="ui.structure">Show structure</button>
+          <button data-act="reset" data-i18n="ui.reset">Step back</button>
+        </div>
+        <p class="structure-key hand" data-i18n="r2.structure">the rock’s triangle · a high horizon · stones leading in on the diagonal</p>
+        <ol class="notes">
+          <li data-n="1"><button><span>01</span><b data-i18n="r2.n1.t">The rock</b></button><p data-i18n="r2.n1.b">Built, not drawn. The stone is made of short, square, flat strokes laid side by side like bricks, each one a small plane catching light. Cézanne built his mountains the same way.</p></li>
+          <li data-n="2"><button><span>02</span><b data-i18n="r2.n2.t">Yellow against violet</b></button><p data-i18n="r2.n2.b">The sunlit face is yellow and ochre; the shadow side isn’t brown, it’s violet — yellow’s complementary colour. That’s the impressionist rule of shadows, and it’s why the rock seems to glow.</p></li>
+          <li data-n="3"><button><span>03</span><b data-i18n="r2.n3.t">The little tree</b></button><p data-i18n="r2.n3.b">A tiny tree leaning out, its foliage dotted in red, ochre and green. It gives the scale — and the story: something alive holding on to something hard.</p></li>
+          <li data-n="4"><button><span>04</span><b data-i18n="r2.n4.t">The surf</b></button><p data-i18n="r2.n4.b">Thick white flicks thrown against the darkest base of the rock. Contact is drama: the brightest whites in the picture sit right next to the deepest darks, exactly where water hits stone.</p></li>
+          <li data-n="5"><button><span>05</span><b data-i18n="r2.n5.t">The sea</b></button><p data-i18n="r2.n5.b">Never just “blue”. Horizontal dashes of cobalt, cerulean, lilac and mint sit side by side and mix in your eye instead of on the palette. Broken colour — Monet’s way.</p></li>
+          <li data-n="6"><button><span>06</span><b data-i18n="r2.n6.t">The sky</b></button><p data-i18n="r2.n6.b">Pink and peach scumbled in crossing directions. Not a single cloud is drawn; the light itself is the subject.</p></li>
+          <li data-n="7"><button><span>07</span><b data-i18n="r2.n7.t">Foreground stones</b></button><p data-i18n="r2.n7.b">Duller, browner, lower in contrast. They anchor the bottom edge and step diagonally up toward the rock, leading the eye in.</p></li>
+        </ol>
+        <div class="pigments">
+          <p class="mono" data-i18n="ui.pigments">Pigment samples — hover to see where</p>
+          <ul>
+            <li style="--c:#ddb561" data-x="50" data-y="26"><i></i><b data-i18n="r2.p1">Sunlit stone</b><code>#DDB561</code></li>
+            <li style="--c:#af5a31" data-x="59" data-y="54"><i></i><b data-i18n="r2.p2">Burnt orange</b><code>#AF5A31</code></li>
+            <li style="--c:#272958" data-x="10" data-y="50"><i></i><b data-i18n="r2.p3">Violet shadow</b><code>#272958</code></li>
+            <li style="--c:#5283b7" data-x="78" data-y="40"><i></i><b data-i18n="r2.p4">Open sea</b><code>#5283B7</code></li>
+            <li style="--c:#717ab6" data-x="60" data-y="18"><i></i><b data-i18n="r2.p5">Far mountains</b><code>#717AB6</code></li>
+            <li style="--c:#ddb9af" data-x="75" data-y="8"><i></i><b data-i18n="r2.p6">Pink sky</b><code>#DDB9AF</code></li>
+            <li style="--c:#e5dfc9" data-x="88" data-y="52"><i></i><b data-i18n="r2.p7">Foam</b><code>#E5DFC9</code></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <p class="field-note mono" data-i18n="ui.fieldnote">The background of this room is a colour field after Rothko, mixed from the painting’s own pigments.</p>
+  </section>
+
+  <!-- Room III -->
+  <section class="room" id="room-3" style="--bg:#aba084;--f1:#ad2225;--f2:#2a694e;--f3:#daa934;--accent:#ad2225">
+    <div class="fields" aria-hidden="true"><i></i><i></i><i></i></div>
+    <header class="room-head">
+      <span class="room-no" aria-hidden="true">III</span>
+      <div>
+        <p class="mono" data-i18n="r3.kicker">Room III · Portrait (of a sort)</p>
+        <h2 data-i18n="r3.title">Not Amused</h2>
+      </div>
+    </header>
+    <div class="room-body">
+      <figure class="canvas" style="--ar:792/1032">
+        <div class="zoomer">
+          <img src="img/clown-cat.jpg" alt="A grey-and-white cat wearing a rainbow clown wig, red nose and blue stripes under its eyes" data-i18n-alt="r3.alt" width="792" height="1032" loading="lazy">
+          <svg class="structure" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <ellipse cx="47" cy="17" rx="46" ry="21"/>
+            <path d="M57 0 V 80"/>
+            <path d="M40 12 L 57 53" class="grid"/>
+            <path d="M28 46 L 70 43"/>
+          </svg>
+          <span class="probe" aria-hidden="true"></span>
+          <button class="spot" style="--x:45;--y:12" data-n="1">1</button>
+          <button class="spot" style="--x:30;--y:58" data-n="2">2</button>
+          <button class="spot" style="--x:66;--y:60" data-n="3">3</button>
+          <button class="spot" style="--x:73;--y:48" data-n="4">4</button>
+          <button class="spot" style="--x:52;--y:37" data-n="5">5</button>
+          <button class="spot" style="--x:32;--y:86" data-n="6">6</button>
+          <button class="spot" style="--x:88;--y:70" data-n="7">7</button>
+        </div>
+      </figure>
+      <aside class="label">
+        <p class="mono caption" data-i18n="r3.caption">Oil on canvas · 2026</p>
+        <p class="lede" data-i18n="r3.lede">A cat in a clown wig, deeply unimpressed. It’s funny for about one second — then the blue stripes start reading as tears. Absurd on purpose, the way she loves contemporary art: a joke that makes you look twice.</p>
+        <div class="tools">
+          <button data-act="structure" aria-pressed="false" data-i18n="ui.structure">Show structure</button>
+          <button data-act="reset" data-i18n="ui.reset">Step back</button>
+        </div>
+        <p class="structure-key hand" data-i18n="r3.structure">the wig’s great oval · the nose’s axis · the eye line · red calls to red</p>
+        <ol class="notes">
+          <li data-n="1"><button><span>01</span><b data-i18n="r3.n1.t">The wig</b></button><p data-i18n="r3.n1.b">Red, yellow, green and a touch of blue, laid on thick in round, twisting dabs — the texture literally is the curl. It’s the loudest place on the canvas and it owns the whole top third.</p></li>
+          <li data-n="2"><button><span>02</span><b data-i18n="r3.n2.t">Make-up, or tears?</b></button><p data-i18n="r3.n2.b">Blue vertical stripes under the eyes. Both. This is the old sad-clown idea — Watteau’s Pierrot, Picasso’s saltimbanques — painted onto a cat.</p></li>
+          <li data-n="3"><button><span>03</span><b data-i18n="r3.n3.t">Nose and mouth</b></button><p data-i18n="r3.n3.b">One red circle and one downturned line. The red repeats the wig and ties the face to it; the drooping mouth carries the entire mood.</p></li>
+          <li data-n="4"><button><span>04</span><b data-i18n="r3.n4.t">The eyes</b></button><p data-i18n="r3.n4.b">Black almonds with a single white highlight each, glancing sideways rather than at us. The cat is somewhere else, untouched by our laughter.</p></li>
+          <li data-n="5"><button><span>05</span><b data-i18n="r3.n5.t">The white face</b></button><p data-i18n="r3.n5.b">Not flat white: the strokes follow the direction of the fur, with greys and cool blues tucked under the highlights, so the face stays round.</p></li>
+          <li data-n="6"><button><span>06</span><b data-i18n="r3.n6.t">The ruff</b></button><p data-i18n="r3.n6.b">Heavy grey strokes on the chest read like a clown’s collar — a Pierrot ruff made of fur.</p></li>
+          <li data-n="7"><button><span>07</span><b data-i18n="r3.n7.t">The background</b></button><p data-i18n="r3.n7.b">Flat khaki, almost no texture: a quiet field that lets the wig scream. The cat is pushed to the left, leaving empty air beside it.</p></li>
+        </ol>
+        <div class="pigments">
+          <p class="mono" data-i18n="ui.pigments">Pigment samples — hover to see where</p>
+          <ul>
+            <li style="--c:#ad2225" data-x="57" data-y="53"><i></i><b data-i18n="r3.p1">Nose red</b><code>#AD2225</code></li>
+            <li style="--c:#762725" data-x="40" data-y="12"><i></i><b data-i18n="r3.p2">Wig red</b><code>#762725</code></li>
+            <li style="--c:#daa934" data-x="12" data-y="10"><i></i><b data-i18n="r3.p3">Wig yellow</b><code>#DAA934</code></li>
+            <li style="--c:#2a694e" data-x="86" data-y="20"><i></i><b data-i18n="r3.p4">Wig green</b><code>#2A694E</code></li>
+            <li style="--c:#5893c3" data-x="37" data-y="52"><i></i><b data-i18n="r3.p5">Tear blue</b><code>#5893C3</code></li>
+            <li style="--c:#d6dcda" data-x="55" data-y="43"><i></i><b data-i18n="r3.p6">Face white</b><code>#D6DCDA</code></li>
+            <li style="--c:#aba084" data-x="88" data-y="72"><i></i><b data-i18n="r3.p7">Khaki ground</b><code>#ABA084</code></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <p class="field-note mono" data-i18n="ui.fieldnote">The background of this room is a colour field after Rothko, mixed from the painting’s own pigments.</p>
+  </section>
+</main>
+
+<!-- ───────── HER WORDS ───────── -->
+<section class="words" id="words">
+  <p class="mono kicker" data-i18n="words.kicker">In her own words</p>
+  <div class="words-cols">
+    <p class="big" data-i18n-html="words.p1"><em>I’m in love!!!</em> With art in general, honestly. I’m a big fan of classical art as well, but I appreciate pretty much every period. I love seeing how people expressed themselves in different eras, and how art reflects the way they saw and understood the world around them.</p>
+    <p data-i18n-html="words.p2">I’m particularly into impressionism and post-impressionism, especially artists like <mark data-artist="morisot">Berthe Morisot</mark>, <mark data-artist="redon">Odilon Redon</mark> and <mark data-artist="monet">Monet</mark>. I also love modern and contemporary art, especially <mark data-artist="rothko">Rothko</mark> and <mark data-artist="klein">Yves Klein</mark>. What fascinates me about contemporary art is how something seemingly absurd or unconventional can make you question things and see them from a completely different perspective.</p>
+    <p data-i18n-html="words.p3">I’m also really interested in performance art. For example, <mark data-artist="abramovic">Marina Abramović and Ulay’s walk along the Great Wall of China</mark> is something I find incredibly meaningful. I love how art can go beyond paintings and sculptures and become an experience, an idea — or even a way of expressing something that words can’t quite capture.</p>
+  </div>
+</section>
+
+<!-- ───────── LINEAGE ───────── -->
+<section class="lineage" id="lineage">
+  <div class="lineage-head">
+    <p class="mono kicker" data-i18n="lin.kicker">Lineage</p>
+    <h2 class="display" data-i18n="lin.title">Who is in the room with her</h2>
+    <p class="hand" data-i18n="lin.hint">hover a name — the wall takes its colour</p>
+  </div>
+  <ul class="names">
+    <li data-artist="morisot" style="--wall:#efe3d6;--wink:#2a2420"><span class="yrs mono">1841–1895</span><b>Berthe Morisot</b><p data-i18n="lin.morisot">Painted air more than objects. Her pinks and pearl whites live in the sky of Room I.</p></li>
+    <li data-artist="monet" style="--wall:#8f9fd6;--wink:#10162a"><span class="yrs mono">1840–1926</span><b>Claude Monet</b><p data-i18n="lin.monet">Broken colour and coloured shadows — every dash of the sea in Room II.</p></li>
+    <li data-artist="redon" style="--wall:#d8577a;--wink:#1f0d14"><span class="yrs mono">1840–1916</span><b>Odilon Redon</b><p data-i18n="lin.redon">Colour as a dream state, strange creatures with soft eyes. Hello, clown cat.</p></li>
+    <li data-artist="rothko" style="--wall:#7d1f1a;--wink:#f4e4cf"><span class="yrs mono">1903–1970</span><b>Mark Rothko</b><p data-i18n="lin.rothko">Colour you stand inside. The soft fields behind each room on this page.</p></li>
+    <li data-artist="klein" style="--wall:#002fa7;--wink:#f4eee3"><span class="yrs mono">1928–1962</span><b>Yves Klein</b><p data-i18n="lin.klein">One blue, patented: International Klein Blue. The blue this page opens with.</p></li>
+    <li data-artist="abramovic" style="--wall:#c4302b;--wink:#fff4ea"><span class="yrs mono">1988</span><b>Marina Abramović &amp; Ulay</b><p data-i18n="lin.abramovic">The Lovers: walking the Great Wall toward each other. It’s how this page ends.</p></li>
+  </ul>
+</section>
+
+<!-- ───────── THE WALK ───────── -->
+<section class="walk" id="walk">
+  <div class="walk-sticky">
+    <p class="mono kicker" data-i18n="walk.kicker">The Lovers · The Great Wall Walk · 1988</p>
+    <p class="walk-text" data-i18n="walk.text">In 1988 Marina Abramović and Ulay set off from opposite ends of the Great Wall of China and walked for ninety days to meet in the middle — and say goodbye. This page ends the other way round: meet in the middle and say hello.</p>
+    <svg class="wall" viewBox="0 0 1000 220" aria-hidden="true">
+      <path class="wall-line" d="M10 160 L70 120 L120 140 L175 80 L240 105 L300 58 L355 92 L415 70 L470 118 L530 96 L585 132 L640 76 L700 98 L760 52 L820 90 L870 70 L930 120 L990 104"/>
+      <g class="walker w-a"><circle r="9"/><text y="-18" text-anchor="middle">M</text></g>
+      <g class="walker w-b"><circle r="9"/><text y="-18" text-anchor="middle">U</text></g>
+    </svg>
+    <div class="hello">
+      <h2 class="display" data-i18n="walk.hello">Hello.</h2>
+      <div class="contacts">
+        <a href="https://instagram.com/isitanastasiia" target="_blank" rel="noopener">@isitanastasiia</a>
+      </div>
+      <p class="hand" data-i18n="walk.commission">for commissions, exhibitions, or just to talk about Rothko</p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot mono">
+  <span>© 2026 Nastya · <span data-i18n="foot.rights">all works by the artist</span></span>
+  <span>Klein blue #002FA7</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
